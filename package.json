@@ -1,8 +1,8 @@
 {
-    "name": "@tsastro/tsofa",
+    "name": "@republicof1/tsofa",
     "version": "18.0.0",
     "type": "module",
-    "description": "a typescript transcription of the IAU SOFA library",
+    "description": "forked version of typescript transcription of the IAU SOFA library",
     "author": "Paul Harrison <paul.harrison@manchester.ac.uk>",
     "license": "MIT",
     "private": false,
@@ -19,7 +19,7 @@
     ],
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/tsastro/tsofa.git"
+        "url": "git+https://github.com/republicof1/tsofa.git"
     },
     "publishConfig": {
         "registry": "https://npm.pkg.github.com"
@@ -29,9 +29,9 @@
         "Astronomy"
     ],
     "bugs": {
-        "url": "https://github.com/tsastro/tsofa/issues"
+        "url": "https://github.com/republicof1/tsofa/issues"
     },
-    "homepage": "https://github.com/tsastro/tsofa#readme",
+    "homepage": "https://github.com/republicof1/tsofa#readme",
     "devDependencies": {
         "@eslint/js": "^9.9.1",
         "@types/node": "^20.7.1",
