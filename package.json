@@ -1,6 +1,6 @@
 {
     "name": "@republicof1/tsofa",
-    "version": "18.0.0",
+    "version": "18.4.0",
     "type": "module",
     "description": "forked version of typescript transcription of the IAU SOFA library",
     "author": "Paul Harrison <paul.harrison@manchester.ac.uk>",
@@ -8,7 +8,7 @@
     "private": false,
     "scripts": {
         "build": "tsc",
-        "test": "testyts",
+        "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
         "doc": "typedoc src/main/ts/TSOFA.ts",
         "eslint": "eslint ."
     },
@@ -33,20 +33,24 @@
     },
     "homepage": "https://github.com/republicof1/tsofa#readme",
     "devDependencies": {
-        "@eslint/js": "^9.9.1",
+        "@eslint/js": "^8.57.0",
+        "@jest/globals": "^29.7.0",
+        "@tsconfig/node22": "^22.0.0",
+        "@types/jest": "^29.5.12",
         "@types/node": "^20.7.1",
         "@typescript-eslint/eslint-plugin": "^6.17.0",
         "@typescript-eslint/parser": "^6.17.0",
-        "eslint": "^9.9.1",
+        "eslint": "^8.57.0",
         "eslint-plugin-import": "^2.28.1",
         "eslint-plugin-jsdoc": "^46.8.1",
         "eslint-plugin-prefer-arrow": "^1.2.3",
         "globals": "^15.9.0",
+        "jest": "^29.7.0",
         "testyts": "^1.5.0",
+        "ts-jest": "^29.2.5",
         "ts-node": "^10.9.1",
         "typedoc": "^0.25.6",
         "typescript": "^5.2.2",
         "typescript-eslint": "^8.3.0"
-    },
-    "dependencies": {}
+    }
 }

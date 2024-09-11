@@ -1,15 +1,21 @@
 {
   "$schema": "https://json.schemastore.org/tsconfig",
+  "display": "Node 22",
+  "_version": "22.4.0",
+  "type": "module",
   "compilerOptions": {
-    "module": "commonjs",
-    "target": "es6",
+    "module": "NodeNext",
+    "target": "esnext",
     "declaration": true,
     "sourceMap": true,
-    "experimentalDecorators": true,
-    "lib": [ "es6" ] ,  
-    "outDir": "./dist"
+    //"allowImportingTsExtensions": true,
+    "allowJs": true,
+    //"experimentalDecorators": true,
+    "esModuleInterop": true,
+    "lib": [ "ESNext" ] ,  
+    "outDir": "./dist",
+    "moduleResolution": "NodeNext",
+    "types": ["node", "jest"],
   },
-  "include": [
-    "src/main/ts/**/*"
-  ]
+  "include": ["src/main/ts/**/*"]
 }
