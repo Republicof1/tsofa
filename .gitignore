@@ -2,4 +2,5 @@
 /.idea/
 /dist/
 /outdocs/
+/coverage/
 package-lock.json

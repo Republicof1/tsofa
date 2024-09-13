@@ -10,7 +10,10 @@ const config: Config = {
   testEnvironment: "node",
   preset: "ts-jest",
   transform: {
-    "^.+.tsx?$": ["ts-jest",{}],
+    "^.+.(t|j)sx?$": ["ts-jest",{}],
+  },
+  moduleNameMapper: {
+    '^(\\.{1,2}/.*)\\.js$': '$1',
   },
 };
 
